@@ -1,0 +1,121 @@
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-large) var(--spacing-medium);
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .input-group {
+        flex-direction: column; /* Stack label and input */
+        align-items: flex-start;
+        gap: var(--spacing-unit);
+    }
+
+    .input-group label {
+        width: auto; /* Remove fixed width */
+        margin-right: 0;
+    }
+
+    .input-group input[type="number"],
+    .input-group select {
+         width: 100%; /* Full width inputs */
+         min-width: 0;
+    }
+
+     /* Responsive for panel type containers */
+    .muro-panel-types:not(.hidden),
+    .cielo-panel-type:not(.hidden) {
+        padding: var(--spacing-medium); /* Keep padding */
+        margin-bottom: var(--spacing-medium); /* Keep margin */
+        border: 1px solid var(--color-light-gray); /* Keep border */
+        border-radius: var(--border-radius-medium); /* Keep radius */
+        margin-top: var(--spacing-large); /* Keep top margin */
+        padding-top: var(--spacing-medium); /* Adjust padding top */
+    }
+
+
+    .remove-item-btn {
+        top: var(--spacing-small);
+        right: var(--spacing-small);
+        padding: 3px 6px;
+        font-size: 0.7rem;
+    }
+
+    .download-options {
+        flex-direction: column; /* Stack download buttons */
+        gap: var(--spacing-unit);
+    }
+
+    .download-options button {
+         width: 100%; /* Full width download buttons */
+         flex-grow: 0;
+    }
+
+    .item-summary p {
+        flex-direction: column; /* Stack summary label and value */
+        align-items: flex-start;
+        gap: var(--spacing-unit);
+    }
+
+    .item-summary p strong {
+        min-width: auto; /* Remove min width */
+        margin-right: 0;
+    }
+
+    .item-summary p span {
+        text-align: left; /* Align value to the left */
+    }
+
+    footer {
+        padding-top: var(--spacing-medium);
+        margin-top: var(--spacing-large);
+    }
+     .clarification-text {
+        font-size: 0.8em; /* Smaller font on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .container {
+        padding: var(--spacing-medium) var(--spacing-unit);
+    }
+
+    button {
+        font-size: 1rem;
+        padding: var(--spacing-small);
+    }
+
+    .download-options button {
+        font-size: 0.9rem;
+        padding: var(--spacing-unit);
+    }
+
+    #results-content th,
+    #results-content td {
+        padding: var(--spacing-unit);
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+     .clarification-text {
+        font-size: 0.8em; /* Consistent smaller font */
+    }
+}
